@@ -43,11 +43,11 @@
   },
   "homepage": "https://github.com/FiXz1621/TFG#readme",
   "devDependencies": {
-    "@types/jsonwebtoken": "^9.0.2",
     "@types/bcrypt": "^5.0.0",
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "@types/jest": "^29.5.0",
+    "@types/jsonwebtoken": "^9.0.2",
     "@types/morgan": "^1.9.4",
     "@types/signal-exit": "^3.0.1",
     "@types/supertest": "^2.0.12",

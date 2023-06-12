@@ -4,7 +4,7 @@
  * @author @FiXz1621
  * @description This is the main entry point for the API
  * @version 1.0.0
- * @license Creative Commons 
+ * @license Creative Commons BY-SA 4.0
  * ******************************************************
 * */
 
@@ -23,29 +23,22 @@ const app = createApp();
 const HTTP_PORT = process.env.HTTP_PORT || 80;
 const HTTPS_PORT = process.env.HTTPS_PORT || 443;
 
+const credentials = {
+  key: readFileSync(join(__dirname, "..", "cert", "key.pem")),
+  cert: readFileSync(join(__dirname, "..", "cert", "cert.pem")),
+};
+
 const httpServer = http.createServer(app).listen(HTTP_PORT, () => {
   // eslint-disable-next-line no-console
   console.log(`HTTP Server running on port ${HTTP_PORT}`);
 });
 
-let httpsServer = null; 
-
-try {
-  const credentials = {
-    key: readFileSync(join(__dirname, "..", "cert", "key.pem")),
-    cert: readFileSync(join(__dirname, "..", "cert", "cert.pem")),
-  };
-  
-  httpsServer = https
+const httpsServer = https
   .createServer(credentials, app)
-  .listen(HTTPS_PORT, async () => {
+  .listen(HTTPS_PORT, () => {
     // eslint-disable-next-line no-console
     console.log(`HTTPS Server running on port ${HTTPS_PORT}`);
-  });
-} catch (error) {
-  // eslint-disable-next-line no-console
-  console.log("HTTPS Server not running");
-}
+});
 
 /**
  * This function is called when the process is terminated, 
@@ -58,7 +51,6 @@ onExit(() => {
 
   console.log("Closing servers");
   httpServer.close();
-  if(httpServer != null)
-    httpsServer.close();
+  httpsServer.close();
   console.log("Servers closed");
 });
