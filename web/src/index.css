@@ -20,6 +20,7 @@ body {
   background-color: var(--bodyColor);
   color: var(--textColor);
   line-height: 1.4em;
+  overflow: auto !important;
 }
 
 img,

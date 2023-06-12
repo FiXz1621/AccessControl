@@ -4,7 +4,7 @@ import Sidebar from '../Components/Sidebar';
 import TitlePage from '../Components/TitlePage';
 import { getAPIUrl, longDate } from '../functions';
 import { useNavigate } from 'react-router-dom';
-import { AccessRecord } from '../Types/AccessRecord';
+import { AccessRecordType } from '../Types/AccessRecord';
 
 const AccessRecord = () => {
 
@@ -46,7 +46,7 @@ const AccessRecord = () => {
                                     {error && <tr><td colSpan={7}>Error al cargar la base de datos.</td></tr>}
                                     {loading && <tr><td colSpan={7}>Cargando base de datos...</td></tr>}
                                     {/* Iterate over the access record filling the table rows */}
-                                    {accessRecords && accessRecords.map((accessRecord: AccessRecord) => (
+                                    {accessRecords && accessRecords.map((accessRecord: AccessRecordType) => (
                                         <tr key={accessRecord.access_record_id}>
                                             <td>{accessRecord.username ? accessRecord.username : 'Desconocido'}</td>
                                             <td>{accessRecord.door_location}</td>

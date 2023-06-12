@@ -1,6 +1,6 @@
 import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
 import { longDate } from '../functions';
-import { AccessRecord } from '../Types/AccessRecord';
+import { AccessRecordType } from '../Types/AccessRecord';
 
 //PDF style
 const styles = StyleSheet.create({
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
 });
 
 //PDF document to which we pass the entry record
-const AccessRecordPDF = ({ accessRecords }: {accessRecords: AccessRecord[]}) => (
+const AccessRecordPDF = ({ accessRecords }: {accessRecords: AccessRecordType[]}) => (
   <Document>
     <Page size="A4" style={styles.page}>
       <View style={styles.section}>
@@ -78,7 +78,7 @@ const AccessRecordPDF = ({ accessRecords }: {accessRecords: AccessRecord[]}) => 
               <Text style={styles.tableCellHeader}>Autorización</Text>
             </View>
           </View>
-          {accessRecords.map((accessRecord: AccessRecord, index:number) => (
+          {accessRecords.map((accessRecord: AccessRecordType, index:number) => (
             <View key={index} style={styles.tableRow}>
               <View style={styles.tableCol}>
                 <Text style={styles.tableCell}>{accessRecord.username}</Text>
