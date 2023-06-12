@@ -114,7 +114,6 @@ const Roles = () => {
         })
             .then(response => response.json())
             .then(data => {
-                console.log(data);
                 alertMessage('Rol modificado correctamente.', 'success', alertContainer);
             })
             .catch(_ => {
