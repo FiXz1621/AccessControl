@@ -1,0 +1,137 @@
+.home-page{
+    height: 100vh;
+    width: 100%;
+    margin: 70px 0px 0px 0px;
+}
+
+.home-page-content{
+    height: 100vh;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.statistic{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.container{
+    margin: 30px 10px 0px 10px;
+    width: 500px;
+    border: solid 1px #666666;
+    border-radius: 30px;
+    box-shadow: #616161 3px 3px 8px;
+}
+
+.title-total-records{
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.col{
+    padding: 20px 0px 10px 0px;
+}
+
+.home-page-content-body{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+}
+
+.home-page-content-body-item1{
+    border: solid 1px rgb(102, 102, 102);
+    box-shadow: #616161 3px 3px 8px;
+    height: 450px;
+    width: 30%;
+    margin: 30px 10px 10px 10px;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.chart{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page-content-body-item2{
+    border: solid 1px rgb(102, 102, 102);
+    box-shadow: #616161 3px 3px 8px;
+    height: 450px;
+    width: 70%;
+    margin: 30px 10px 10px 10px;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 1000px){
+    .home-page-content-body{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-page-content-body-item1{
+        width: 80%;
+    }
+
+    .home-page-content-body-item2{
+        width: 80%;
+    }
+
+    .statistic{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        width: 80%;
+    }
+
+    .title-total-records{
+        font-size: 15px;
+    }
+
+    .col{
+        padding: 10px 0px 10px 0px;
+    }
+
+    .home-page-content-body-item1{
+        margin: 30px 10px 10px 10px;
+        padding: 20px;
+    }
+
+    .home-page-content-body-item2{
+        margin: 30px 10px 10px 10px;
+        padding: 20px;
+    }
+
+    .home-page-content-body-item1{
+        height: 400px;
+    }
+
+    .home-page-content-body-item2{
+        height: 400px;
+    }
+
+    .chart{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

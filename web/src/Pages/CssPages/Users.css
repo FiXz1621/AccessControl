@@ -1,0 +1,105 @@
+.main-container{
+    width: 100%;
+    height: 100vh;
+    padding-top: 10px;
+    background-color: transparent !important;
+}
+
+.register-user-content{
+    height: 100vh;
+    width: 100%;
+    margin: 80px 0px 0px 0px;
+}
+
+.info-users{
+    margin: 0;
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+    width: 98%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-12{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;    
+}
+
+.card{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent !important;
+}
+
+.card-body{
+    background-color: transparent !important;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent !important;
+}
+
+.table{
+    background-color: #fff;
+}
+
+.table thead{
+    background-color: #252525;
+}
+
+.table thead th{
+    color: #fff;
+}
+
+.table-bordered{
+    border: 1px solid #000;
+}
+
+.users-table{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    float: left;
+}
+
+.btns-users{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 15%;
+    margin-left: 1%;
+}
+
+.btn-user{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    background-color: #414141;
+    color: #fff;
+}
+
+.btn-user:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .card-body{
+        flex-direction: column;
+    }
+
+    .btns-users{
+        width: 80%;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+}

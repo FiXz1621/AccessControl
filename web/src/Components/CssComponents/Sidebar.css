@@ -1,0 +1,205 @@
+.bg-body-tertiary {
+    padding: 0;
+}
+
+/* Sidebar */
+.container-fluid {
+    color: #252525;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: #252525 1px 0.6px 5px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.title-sidebar{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #252525;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.navbar-toggler {
+    outline: none;
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    font-size: 1.8rem;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+}
+
+.bi.bi-list {
+    padding-top: 35px;
+    font-size: 55px;
+    background-color: transparent !important;
+}
+
+.bi.bi-list:hover {
+    font-size: 56px;
+    text-shadow: #2BD611 0px 0px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.change-theme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.bi.bi-moon-fill{
+    font-size: 1rem;
+    color: #252525;
+    margin-right: 5px;
+}
+
+.bi.bi-brightness-high-fill{
+    font-size: 1.2rem;
+    color: #252525;
+    margin-left: -5px;
+    margin-top: 2px;
+}
+
+.bi.bi-x-lg.close-offcanvas{
+    padding: 5px 0px 0px 5px;
+    cursor: pointer;
+}
+
+.bi.bi-x-lg.close-offcanvas:hover{
+    cursor: pointer;
+}
+
+/* Right dropdown */
+.offcanvas.offcanvas-end {
+    height: 100vh;
+    width: 400px;
+    border: none;
+    box-shadow: #ccc 2px 2px;
+}
+
+.btn-close {
+    font-size: 1.2rem;
+    color: #252525;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.offcanvas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px 10px 10px;
+}
+
+.offcanvas-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #252525;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.offcanvas-body{
+    padding: 0px 0px 0px 10px;
+    background-color: #e9e5e6;
+}
+
+.offcanvas-body-dark{
+    background-color: #4b4b4b;
+}
+
+.bi.bi-x-lg{
+    font-size: 1.5rem;
+    color: #818181;
+}
+
+.bi.bi-x-lg:hover{
+    color: #ce2121;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 20px;
+}
+
+.nav-item.page{
+    font-size: 1.2rem; 
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    padding: 5px 30px 5px 20px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 5px -5px #9a9a9a;
+    cursor: pointer;
+}
+
+.nav-item.page:hover{
+    border-bottom: 3px solid #2BD611;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0px 0px 10px 0px;
+    border-radius: 10px;
+    height: 100px;
+    width: 380px;
+    box-shadow: #575757 2px 2px 10px;
+}
+
+.profile-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.username-profile{
+    font-size: 1.8rem;
+    color: #252525;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.rolename-profile{
+    font-size: 1rem;
+    color: #252525;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.bi.bi-box-arrow-right{
+    font-size: 1.6rem;
+    color: #8f8f8f;
+    position: relative;
+    left: 90%;
+}
+
+.bi.bi-box-arrow-right:hover{
+    color: #ce2121;
+    transition: all 0.3s ease-in-out;
+}

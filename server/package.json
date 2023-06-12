@@ -1,0 +1,66 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "postgres": "^3.3.4",
+    "signal-exit": "^3.0.7",
+    "supertest": "^6.3.3",
+    "uuid": "^9.0.0",
+    "zod": "^3.21.4"
+  },
+  "name": "server-control-acceso",
+  "version": "1.0.0",
+  "description": "Servidor para el TFG de Fernando y Tatiana",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "lint": "eslint --fix src test",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/FiXz1621/TFG.git"
+  },
+  "keywords": [
+    "TFG"
+  ],
+  "author": "Fernando",
+  "contributors": [
+    "Fernando",
+    "Tatiana"
+  ],
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/FiXz1621/TFG/issues"
+  },
+  "homepage": "https://github.com/FiXz1621/TFG#readme",
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.0",
+    "@types/morgan": "^1.9.4",
+    "@types/signal-exit": "^3.0.1",
+    "@types/supertest": "^2.0.12",
+    "@types/uuid": "^9.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "eslint": "^8.37.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-import-resolver-typescript": "^3.5.4",
+    "eslint-plugin-import": "^2.27.5",
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  }
+}

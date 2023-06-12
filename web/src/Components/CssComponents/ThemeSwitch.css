@@ -1,0 +1,18 @@
+.form-switch .form-check-input {
+    margin-right: 10px;
+    height: 24px;
+    width: 48px;
+    border: 1px solid #a1a0a0;
+    background-color: #252525;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,255,255,1.0)'/></svg>");
+}
+
+.form-switch .form-check-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form-switch .form-check-input:checked {
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,1.0)'/></svg>");
+}
