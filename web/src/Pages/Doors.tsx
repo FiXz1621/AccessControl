@@ -108,6 +108,11 @@ const Doors = () => {
 
     //Create a new door
     const createDoor = () => {
+        if(locationDoor.value.trim() === '') {
+            alertMessage('El campo ubicación no puede estar vacío.', 'error', alertContainer);
+            return;
+        }
+        
         const door: RawDoor = {
             door_location: locationDoor.value.trim(),
             access_level: +accessLevelDoor.value,
@@ -138,6 +143,11 @@ const Doors = () => {
     //Modify a door
     const modifyDoor = () => {
         if (selectedDoor == undefined) return;
+
+        if(locationDoor.value.trim() === '') {
+            alertMessage('El campo ubicación no puede estar vacío.', 'error', alertContainer);
+            return;
+        }
 
         selectedDoor.door_location = locationDoor.value.trim();
         selectedDoor.access_level = +accessLevelDoor.value;
