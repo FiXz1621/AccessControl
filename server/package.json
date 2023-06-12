@@ -26,17 +26,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/FiXz1621/TFG.git"
+    "url": "git+ssh://git@github.com/FiXz1621/AccessControl.git"
   },
   "keywords": [
-    "TFG"
+    "TFG",
+    "AccessControl"
   ],
   "author": "Fernando",
   "contributors": [
     "Fernando",
     "Tatiana"
   ],
-  "license": "CC-BY-4.0",
+  "license": "CC-BY-SA-4.0",
   "bugs": {
     "url": "https://github.com/FiXz1621/TFG/issues"
   },
