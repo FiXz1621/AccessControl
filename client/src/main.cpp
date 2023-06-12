@@ -13,6 +13,7 @@ std::deque<unsigned int> rawPin;
 #define D0_PIN 21
 #define D1_PIN 22
 #define RELAY_PIN 26
+#define DOOR_DELAY 2000
 #define SSID "WIFI_SSID"                              // Cambiar por el nombre de la red
 #define PASSWORD "WIFI_PASSWORD"                      // Cambiar por la contraseña de la red
 #define API_URL "https://SERVER_IP/api/v1/authorize/" // Cambiar por la url del servidor
@@ -149,7 +150,7 @@ String extractPin(std::deque<unsigned int> rawPin)
 void openDoor()
 {
   digitalWrite(RELAY_PIN, LOW);
-  delay(2000);
+  delay(DOOR_DELAY);
   digitalWrite(RELAY_PIN, HIGH);
 }
 
@@ -189,6 +190,9 @@ void sendRequest(String code)
       {
         // If the response is false, show a message
         M5.Lcd.println("Access denied");
+        delay(2000);
+        clearScreen();
+        rawPin.clear();
       }
     }
     else
