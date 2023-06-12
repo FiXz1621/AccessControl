@@ -9,6 +9,7 @@ services:
       - 5432:5432
     environment:
       POSTGRES_PASSWORD: accessControl
+      PG_DATA: /var/lib/postgresql/data/pgdata
     volumes:
       - ./data:/var/lib/postgresql/data
 

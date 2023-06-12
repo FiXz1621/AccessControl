@@ -76,6 +76,7 @@ export async function findByUsername(username: string): Promise<ServiceResponse<
       errorMessage = "User not found";
     }
   } catch (error) {
+    console.log(error);
     statusCode = 500;
     errorMessage = error.message;
   } finally {
