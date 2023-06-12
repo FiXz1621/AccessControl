@@ -3,7 +3,7 @@
 \connect "accessControl";
 
 CREATE TABLE "tfg"."access_records" (
-    "username" character varying(50) NOT NULL,
+    "username" character varying(50),
     "door_location" character varying(255) NOT NULL,
     "access_date" timestamptz NOT NULL,
     "authorized" boolean NOT NULL,
