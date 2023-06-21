@@ -150,6 +150,9 @@ const Roles = () => {
 
     function toggleCreateForm() {
         setMode('create');
+        roleNameInput.value = '';
+        accessLevelInput.value = '0';
+        setValueRange('0');
         toggleRoleForm();
     }
 

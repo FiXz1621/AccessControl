@@ -73,6 +73,9 @@ const Doors = () => {
 
     function toggleCreateForm() {
         toggleDoorForm();
+        locationDoor.value = '';
+        accessLevelDoor.value = '0';
+        setValueRange('0');
         setMode('create');
     }
 
